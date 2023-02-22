@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Labrada&display=swap');
+
 * {
     line-height: 1.6;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-family: 'Labrada', serif;
+    box-sizing: border-box;
+    
     
     /* font-size: ;
     font-style: ;
@@ -23,6 +28,7 @@ h1,
 }
 
 h1 {
+    background-color:rgba(146, 82, 82, 0.582);
     margin-top: 80px;
 }
 
@@ -34,7 +40,7 @@ h1 {
 }
 
 article {
-    column-count: 3;
+    column-count: 2;
     column-gap: 50px;
     column-rule-style: solid;
     column-rule-width: 1px;
@@ -44,38 +50,55 @@ article {
 }
 
 .seccion1 {
-    column-count: 2;
     position:relative;
-    /* border: 3px darkred dotted; */
     margin-right: 50%;
+    border-right: 1px darkred solid;
+    text-align: center;
+    padding-right: 8px;
+} 
+
+.exorcismo,
+    .mono,
+        .noel,
+            .planta,
+                .unicornio {
+                    display: flex;
+                    flex-direction: column;
 }
 
 .seccion2 {
-    column-count: 2;
-    position:relative;
-    /* border: 1px darkred solid; */
+    position:absolute;
     margin-left: 50%;
+    top: 131px;
+    text-align: center;
+    padding-left: 8px;
+    
 }
 
 .seccion3 {
     column-count: 3;
-    position:relative;
-    /* border: 1px darkred solid; */
-    /* margin-right: 50%; */
+    position:static;
+
 }
 
 .seccion4 {
     column-count: 2;
-    position:relative;
-    /* border: 1px darkred solid; */
+    position:absolute;
     margin-left: 50%;
-}
+    bottom: -1697px;
+    text-align: center;
+    border-left: 1px darkred solid;
+    padding-left: 8px;
+    
+} 
 
 .seccion5 {
     column-count: 2;
     position:relative;
-    /* border: 1px darkred solid; */
     margin-right: 50%;
+    text-align: center;
+    padding-right: 8px;
+    
 }
 
 img {
@@ -89,12 +112,13 @@ q {
    
 }
 
-.seccion1 img {
+/* .seccion1 img {
     width: 250px;
     margin:0px 30px;
-}
+} */
 
 
 footer {
+    margin-top: 100px;
     text-align: center;
 }
